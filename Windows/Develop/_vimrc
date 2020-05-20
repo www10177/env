@@ -9,7 +9,10 @@ let $LANG = 'en_US'
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 set nocompatible
-:set guioptions -=T
+if has("gui_running")
+	:set guioptions -=T
+	colorscheme solarized
+endif
 
 "set secure
 set backspace=2         " allow backspacing over everything in insert mode
@@ -43,7 +46,7 @@ autocmd FileType make setlocal noexpandtab
 
 syntax enable
 set background=dark
-colorscheme solarized
+
 
 function PROG()
     set showmatch

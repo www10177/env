@@ -1,0 +1,21 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"ConvertToUTF8",
+		"Emmet",
+		"Javascript Beautify",
+		"JavaScript Completions",
+		"MarkdownLivePreview",
+		"Package Control",
+		"Pretty JSON",
+		"SublimeLinter-contrib-htmlhint",
+		"SublimeLinter-csslint",
+		"SublimeLinter-jshint",
+		"Vue Syntax Highlight",
+		"Vuejs Snippets"
+	]
+}

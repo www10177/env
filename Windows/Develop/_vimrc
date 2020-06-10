@@ -61,9 +61,13 @@ function PROG()
 endfunction
 
 
+
 highlight Comment    ctermfg=DarkCyan
 highlight SpecialKey ctermfg=Yellow
 
+" setup for python 
+set pythonhome=C:\Python38
+set pythonthreedll=C:\Python38\python38.dll
 
 "alias
 map <S-w> :update<CR>                    " using :update to replace :w
@@ -120,10 +124,22 @@ call vundle#begin('$HOME/vimfiles/bundle/')
 Plugin 'VundleVim/Vundle.vim'
 
 " Python indent folder
-Plugin 'tmhedberg/SimpylFold'
+"Plugin 'tmhedberg/SimpylFold'
 
 " Python Indent
 Plugin 'vim-scripts/indentpython.vim'
+
+" Python Auto Complete
+Plugin 'davidhalter/jedi-vim'
+let g:jedi#completions_command = "<C-N>"
+let g:jedi#popup_on_dot = 0
+
+"GOLang Support 
+Plugin 'fatih/vim-go'
+
+Plugin 'ervandew/supertab'
+
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required

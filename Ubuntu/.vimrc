@@ -1,8 +1,3 @@
-"VIMRC of Rist
-"NCCUCS s10347
-"Last update  
-"二  2月  3 12:09:52 CST 2015
-
 set nocompatible
 "set secure
 
@@ -115,7 +110,7 @@ Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdcommenter'
 
 " Python indent folder
-Plugin 'tmhedberg/SimpylFold'
+" Plugin 'tmhedberg/SimpylFold'
 
 " Python Indent
 Plugin 'vim-scripts/indentpython.vim'

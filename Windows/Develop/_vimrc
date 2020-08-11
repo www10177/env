@@ -1,6 +1,3 @@
-"VIMRC of Rist
-"NCCUCS s10347
-
 " Setting for gvim
 set guifont=Consolas:h18:cANSI
 set mouse=c
@@ -138,6 +135,8 @@ let g:jedi#popup_on_dot = 0
 Plugin 'fatih/vim-go'
 
 Plugin 'ervandew/supertab'
+
+Plugin 'preservim/nerdcommenter' 
 
 
 

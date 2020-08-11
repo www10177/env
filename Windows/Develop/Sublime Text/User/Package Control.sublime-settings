@@ -7,6 +7,7 @@
 	[
 		"ConvertToUTF8",
 		"Emmet",
+		"HTML-CSS-JS Prettify",
 		"Javascript Beautify",
 		"JavaScript Completions",
 		"MarkdownLivePreview",
@@ -15,6 +16,7 @@
 		"SublimeLinter-contrib-htmlhint",
 		"SublimeLinter-csslint",
 		"SublimeLinter-jshint",
+		"URLEncode",
 		"Vue Syntax Highlight",
 		"Vuejs Snippets"
 	]

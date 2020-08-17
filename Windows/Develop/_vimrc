@@ -63,16 +63,17 @@ highlight Comment    ctermfg=DarkCyan
 highlight SpecialKey ctermfg=Yellow
 
 " setup for python 
-set pythonhome=C:\Python38
-set pythonthreedll=C:\Python38\python38.dll
+"set pythonhome=C:\\python3
+"set pythonthreedll=C:\\python3\\python38.dll
+set pythonthreedll=python38.dll
 
 "alias
 map <S-w> :update<CR>                    " using :update to replace :w
 map <F3> :update<CR>:q<CR>
 map <F4> :q!<CR>
-map <F8> :!gcc % -o %:r <CR>
+"map <F8> :!gcc % -o %:r <CR>
 "map <F9> :!make %:r <CR>
-map <F9> :!make <CR>
+"map <F9> :!make <CR>
 
 map <F10> <ESC>:read !date<CR>
 "insert mode shortcut
@@ -95,8 +96,8 @@ nnoremap te :tabedit
 " Python Optimization
 "
 " Enable folding
-set foldmethod=indent
-set foldlevel=99
+"set foldmethod=indent
+"set foldlevel=99
 " Enable folding with the spacebar
 nnoremap <space> za
 
@@ -124,7 +125,7 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'tmhedberg/SimpylFold'
 
 " Python Indent
-Plugin 'vim-scripts/indentpython.vim'
+Plugin 'Vimjas/vim-python-pep8-indent'
 
 " Python Auto Complete
 Plugin 'davidhalter/jedi-vim'

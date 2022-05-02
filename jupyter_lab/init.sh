@@ -2,6 +2,8 @@
 export PATH=$HOME/.local/bin/:$PATH
 pip3 install jupyterlab
 pip3 install ipython
+pip3 install widgetsnbextension
+jupyter nbextension enable widgetsnbextension --user --py
 jupyter nbextension install --py widgetsnbextension --user
 jupyter nbextension enable widgetsnbextension --user --py
 cp ./jupyter_lab_config.py ~/.jupyter/ 

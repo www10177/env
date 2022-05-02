@@ -101,6 +101,7 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
+let g:snipMate = { 'snippet_version' : 1 } "Use new parser
 
 "SuperTab
 "use tab to auto complete

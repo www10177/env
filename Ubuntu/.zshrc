@@ -3,8 +3,8 @@ export ZSH=$HOME/.oh-my-zsh
 
 
 #ZSH-comopletions installation
-plugins+=(zsh-completions)
-autoload -U compinit && compinit
+#plugins+=(zsh-completions)
+#autoload -U compinit && compinit
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -84,5 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+## Rebind home and end key (for macOS)
 bindkey "\033[1~" beginning-of-line
 bindkey "\033[4~" end-of-line

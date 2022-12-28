@@ -1,4 +1,5 @@
 #!/bin/bash
+export PATH=$HOME/.local/bin/:$PATH
 pip3 install jupyterlab
 pip3 install ipython
 pip3 install widgetsnbextension

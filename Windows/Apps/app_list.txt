@@ -1,6 +1,29 @@
 .gitignore
+7z2201-x64.exe
 app_list.txt
+ChromeSetup.exe
+CrystalDiskInfo8_17_13 (1).exe
 cspy343.exe
+FastCopy4.2.1_installer.exe
 generate app names.bat
+Heroic-2.5.2-Setup.exe
+install_all.bat
+LineInst.exe
+MPC-HC.1.9.24.18.x64 (1).exe
+Nextcloud-3.6.4-x64 (1).msi
+OfficeSetup.exe
+PowerToysSetup-0.65.0-x64.exe
+python-3.11.1-amd64.exe
+SourceTreeSetup-3.4.10.exe
+SpotifySetup.exe
+sshfs-win-3.7.21011-x64.msi
+SteamSetup.exe
+sublime_text_build_4143_x64_setup.exe
+Termius.exe
 TreeSizeFreeSetup.exe
+tsetup-x64.4.4.1.exe
 Twinkle.Tray.v1.14.8.exe
+VC_redist.x64 (1).exe
+VC_redist.x86.exe
+VSCodeUserSetup-x64-1.74.2.exe
+winfsp-1.12.22339.msi

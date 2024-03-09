@@ -3,8 +3,8 @@ export ZSH=$HOME/.oh-my-zsh
 
 
 #ZSH-comopletions installation
-#plugins+=(zsh-completions)
-#autoload -U compinit && compinit
+plugins+=(zsh-completions)
+autoload -U compinit && compinit
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -54,7 +54,9 @@ plugins=(git)
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH
+export PATH="/home/www10177/.local/share/solana/install/active_release/bin:$PATH"
+export PATH="/home/www10177/.cargo/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -84,6 +86,17 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-## Rebind home and end key (for macOS)
 bindkey "\033[1~" beginning-of-line
 bindkey "\033[4~" end-of-line
+
+alias cp='cp -g'
+alias mv='mv -g'
+alias wol='wakeonlan 74:D4:35:F8:95:30'
+alias rm='echo "use trash instead"'
+alias sudo='echo "Run as sudo -E" && sudo -E'
+
+export NVM_DIR="/home/www10177/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+alias now='date +%Y-%m-%d-%H.%M.%S'
+export PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring # Poetry keyring fix
+export AIRFLOW_HOME=/home/airflow

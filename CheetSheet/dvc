@@ -1,0 +1,1 @@
+`dvc gc -w --not-in-remote` remove local cache not in minio

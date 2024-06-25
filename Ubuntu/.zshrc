@@ -10,7 +10,7 @@ autoload -U compinit && compinit
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="bira"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -50,14 +50,13 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git docker docker-compose docker-machine colored-man-pages)
 
 # User configuration
 
-export PATH=$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH
-export PATH="/home/www10177/.local/share/solana/install/active_release/bin:$PATH"
-export PATH="/home/www10177/.cargo/bin:$PATH"
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH="%HOME/.cargo/bin:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH"
+export MANPATH="$HOME/.local/man:/usr/local/man:$MANPATH"
+export LD_LIBRARY_PATH="$HOME/.local/libexec:$HOME/.local/lib64:$LD_LIBRARY_PATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -91,8 +90,9 @@ bindkey "\033[4~" end-of-line
 
 alias cp='cp -g'
 alias mv='mv -g'
-alias wol='wakeonlan 74:D4:35:F8:95:30'
 alias rm='echo "use trash instead"'
+alias lg="lazygit"
+alias zellija="zellij attach"
 alias sudo='echo "Run as sudo -E" && sudo -E'
 
 export NVM_DIR="/home/www10177/.nvm"

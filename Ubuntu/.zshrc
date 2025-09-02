@@ -50,7 +50,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose docker-machine colored-man-pages)
+plugins=(git docker docker-compose  colored-man-pages)
 
 # User configuration
 
@@ -88,9 +88,6 @@ source $ZSH/oh-my-zsh.sh
 bindkey "\033[1~" beginning-of-line
 bindkey "\033[4~" end-of-line
 
-alias cp='cp -g'
-alias mv='mv -g'
-alias rm='echo "use trash instead"'
 alias lg="lazygit"
 alias zellija="zellij attach"
 alias sudo='echo "Run as sudo -E" && sudo -E'

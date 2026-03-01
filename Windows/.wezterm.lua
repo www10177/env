@@ -10,7 +10,7 @@ return {
     {
       key = 'F1',
       mods = 'ALT',
-      action = act.SendString 'hello world',
+      action = act.SendString 'hello world\r',
     },
   },
 }
